@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import "@/styles/index.scss";
+import "@fontsource/cinzel-decorative/400.css";
+import "@fontsource/cinzel-decorative/700.css";
+import "@fontsource/cinzel-decorative/900.css";
+import "@fontsource/tangerine/400.css";
+import "@fontsource/tangerine/700.css";
+import "@fontsource-variable/cormorant";
+import clsx from "clsx";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={clsx()}>{children}</body>
     </html>
   );
 }
