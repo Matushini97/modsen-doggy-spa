@@ -7,6 +7,7 @@ import "@fontsource/tangerine/400.css";
 import "@fontsource/tangerine/700.css";
 import "@fontsource-variable/cormorant";
 import clsx from "clsx";
+import { Header } from "@/components/ui/layout/header/header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={clsx()}>{children}</body>
+      <body className={clsx()}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

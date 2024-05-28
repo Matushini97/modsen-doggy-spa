@@ -1,0 +1,109 @@
+@mixin typography($fontFamily, $fontSize, $lineHeight, $fontWeight) {
+  margin: 0;
+
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: var(--color-text-primary);
+}
+
+.body1 {
+  @include typography(
+    var(--font-family-primary),
+    var(--font-size-xxl),
+    var(--line-height-m),
+    var(--font-weight-bold)
+  );
+}
+
+.body2 {
+  @include typography(
+    var(--font-family-primary),
+    var(--font-size-xl),
+    var(--line-height-m),
+    var(--font-weight-bold)
+  );
+}
+
+.body3 {
+  @include typography(
+    var(--font-family-primary),
+    var(--font-size-l),
+    var(--line-height-m),
+    var(--font-weight-regular)
+  );
+}
+
+.logo1 {
+  @include typography(
+    var(--font-family-logo),
+    var(--font-size-xl),
+    var(--line-height-m),
+    var(--font-weight-regular)
+  );
+}
+.logo2 {
+  @include typography(
+    var(--font-family-logo),
+    var(--font-size-l),
+    var(--line-height-m),
+    var(--font-weight-regular)
+  );
+}
+.subheading1 {
+  @include typography(
+    var(--font-family-logo),
+    var(--font-size-xl),
+    var(--line-height-m),
+    var(--font-weight-regular)
+  );
+}
+.subheading2 {
+  @include typography(
+    var(--font-family-logo),
+    var(--font-size-l),
+    var(--line-height-m),
+    var(--font-weight-regular)
+  );
+}
+.h1 {
+  @include typography(
+    var(--font-family-headers),
+    var(--font-size-xxl),
+    var(--line-height-m),
+    var(--font-weight-regular)
+  );
+}
+.h2 {
+  @include typography(
+    var(--font-family-headers),
+    var(--font-size-xl),
+    var(--line-height-m),
+    var(--font-weight-regular)
+  );
+}
+.h3 {
+  @include typography(
+    var(--font-family-headers),
+    var(--font-size-l),
+    var(--line-height-m),
+    var(--font-weight-regular)
+  );
+}
+.h4 {
+  @include typography(
+    var(--font-family-headers),
+    var(--font-size-m),
+    var(--line-height-m),
+    var(--font-weight-regular)
+  );
+}
+.h5 {
+  @include typography(
+    var(--font-family-headers),
+    var(--font-size-s),
+    var(--line-height-m),
+    var(--font-weight-regular)
+  );
+}
