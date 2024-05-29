@@ -7,6 +7,7 @@ import { Button } from "../../button";
 import { LinkList } from "../../links-list";
 import { TextField } from "../../text-field";
 import { SocialsList } from "../../socials";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -37,6 +38,34 @@ export const Footer = () => {
           <LinkList links={FooterLinksRight} title={"Navigation"} />
         </div>
       </footer>
+      <div className={clsx(s.bottomSeparator)}>
+        <div className={clsx(s.textWrapper)}>
+          <Button as={Link} href="/" variant="link">
+            <Typography variant="body3">Coockie Policy</Typography>
+          </Button>
+          <Button as={Link} href="/" variant="link">
+            <Typography variant="body3">Cookies Settings</Typography>
+          </Button>
+        </div>
+        <div>
+          <Button as={Link} href="/" variant="link">
+            <Typography variant="body3">
+              Copyright 2021 Luxe Animal Spa, LLC. All rights reserved.
+            </Typography>
+          </Button>
+        </div>
+        <div className={clsx(s.textWrapper)}>
+          <Button as={Link} href="/" variant="link">
+            <Typography variant="body3">Terms</Typography>
+          </Button>
+          <Button as={Link} href="/" variant="link">
+            <Typography variant="body3">Privacy</Typography>
+          </Button>
+          <Button as={Link} href="/" variant="link">
+            <Typography variant="body3">Security</Typography>
+          </Button>
+        </div>
+      </div>
     </>
   );
 };

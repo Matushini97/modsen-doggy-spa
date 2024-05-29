@@ -8,7 +8,7 @@
 }
 
 .separator {
-    background-color: var(--color-inhouse);
+    background-color: var(--color-rosey-cheek);
     height: 0.75rem;
 }
 
@@ -28,6 +28,17 @@
     margin-bottom: 2.8rem;
 }
 
-.socialsWrapper {
-    
+.bottomSeparator {
+    display: flex;
+    justify-content: center;
+    gap: 9.37rem;
+    align-items: center;
+    padding: 0 5.9rem;
+    height: 3.25rem;
+    background-color: var(--color-rosey-cheek);
+}
+
+.textWrapper {
+    display: flex;
+    gap: 2rem;
 }

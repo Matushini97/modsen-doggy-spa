@@ -10,6 +10,7 @@ import { clsx } from "clsx";
 import { Typography } from "../typography";
 
 import s from "./text-field.module.scss";
+import { Search } from "@/assets/icons";
 
 export type TextFieldProps = {
   onValueChange?: (value: string) => void;
@@ -17,6 +18,7 @@ export type TextFieldProps = {
   labelProps?: ComponentProps<"label">;
   errorMessage?: string;
   label?: string;
+  isSearch?: boolean;
 } & ComponentPropsWithoutRef<"input">;
 
 export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
@@ -29,6 +31,7 @@ export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
       containerProps,
       labelProps,
       label,
+      isSearch,
       onChange,
       onValueChange,
       ...restProps
@@ -65,6 +68,15 @@ export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
             onChange={handleChange}
             {...restProps}
           />
+          {isSearch && (
+            <button
+              className={s.search}
+              type={'button'}
+              onClick={() => console.log('search')}
+            >
+              <Search />
+            </button>
+          )}
         </div>
 
         <Typography variant="error" className={classNames.error}>
