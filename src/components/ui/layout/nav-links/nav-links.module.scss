@@ -1,12 +1,26 @@
 .navLinks {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
 }
 
-.activeLink {
-    color: red;
-    text-decoration: underline;
-    text-underline-offset: 5px;
+.navLinks .activeLink {
+  position: relative;
+  text-decoration: none;
+}
+
+.navLinks .activeLink::before {
+  content: "";
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0;
+  right: 0;
+  height: 0.2rem;
+  background-color: var(--color-pink-kisses);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
