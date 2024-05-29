@@ -105,5 +105,11 @@ export const Logo2: Story = {
     variant: 'logo2',
   },
 }
+export const Error: Story = {
+  args: {
+    children: 'Card content',
+    variant: 'error',
+  },
+}
 
 

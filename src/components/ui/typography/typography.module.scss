@@ -107,3 +107,13 @@
     var(--font-weight-regular)
   );
 }
+.error {
+  @include typography(
+    var(--font-family-headers),
+    var(--font-size-s),
+    var(--line-height-m),
+    var(--font-weight-regular)
+  );
+
+  color: var(--color-pink-kisses);
+}

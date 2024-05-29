@@ -18,7 +18,8 @@ export interface TextProps<T extends ElementType> {
     | "subheading2"
     | "body1"
     | "body2"
-    | "body3";
+    | "body3"
+    | 'error';
   children?: ReactNode;
   className?: string;
 }

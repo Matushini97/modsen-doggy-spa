@@ -54,6 +54,6 @@
   color: var(--color-charcoal);
 
   &:hover:enabled {
-    background-color: var(--color-bronzed-rose);
+    opacity: 0.8;
   }
 }

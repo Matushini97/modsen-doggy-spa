@@ -1,0 +1,33 @@
+.footer {
+    padding: 3.44rem 1.625rem 5.25rem 1.625rem;
+    display: flex;
+    gap: 13.18rem;
+    justify-content: center;
+    height: 25rem;
+    background-color: var(--color-inhouse);
+}
+
+.separator {
+    background-color: var(--color-inhouse);
+    height: 0.75rem;
+}
+
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.title {
+  margin-bottom: 1.875rem;
+}
+
+.formWrapper {
+    width: 42.625rem;
+    margin-bottom: 2.8rem;
+}
+
+.socialsWrapper {
+    
+}
