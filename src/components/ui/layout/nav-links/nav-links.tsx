@@ -5,6 +5,7 @@ import { Button } from "../../button";
 import Link from "next/link";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
+import { Typography } from "../../typography";
 export const NavLinks = () => {
   const pathname = usePathname();
   return (
@@ -18,7 +19,7 @@ export const NavLinks = () => {
             variant="link"
             key={link.name}
           >
-            {link.name}
+            <Typography variant="body2">{link.name}</Typography>
           </Button>
         );
       })}
