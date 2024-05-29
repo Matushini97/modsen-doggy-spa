@@ -1,10 +1,11 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+
+import { HomePage } from "@/pages/home-page/home-page";
+import s from "./page.module.css";
 
 export default function Home() {
   return (
     <main className=''>
-      Home
+      <HomePage/>
     </main>
   );
 }

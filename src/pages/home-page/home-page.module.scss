@@ -1,0 +1,61 @@
+.imgWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  background-color: #eecac0;
+  margin-bottom: 2rem;
+}
+
+.bookAppointment {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleWrapper {
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.packageBody {
+  display: flex;
+  //   padding: 2rem;
+  justify-content: center;
+}
+
+.cardImage {
+  width: 550px;
+  height: 550px;
+  overflow: hidden;
+}
+
+.cardOffer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.text {
+  width: 50%;
+
+  text-align: center;
+  margin-bottom: 1rem;
+}
