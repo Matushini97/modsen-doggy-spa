@@ -1,0 +1,28 @@
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.imgWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    margin-bottom: 3rem;
+}
+
+.cardImage {
+  width: 420px;
+  height: 420px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.description {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center
+}

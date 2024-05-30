@@ -2,13 +2,14 @@ import clsx from "clsx";
 import s from "./home-page.module.scss";
 import Image from "next/image";
 import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui";
+import { Button, Gallery } from "@/components/ui";
 import { Card } from "@/components/ui/card";
+import { Collars, CarryOns } from "@/constants/goods";
 
 export const HomePage = () => {
   return (
     <>
-      <div className={clsx(s.imgWrapper)}>
+      <article className={clsx(s.imgWrapper)}>
         <div className={clsx(s.bookAppointment)}>
           <div className={clsx(s.titleWrapper)}>
             <Typography className={clsx(s.title)} variant="body1">
@@ -27,8 +28,8 @@ export const HomePage = () => {
           width={1000}
           height={760}
         />
-      </div>
-      <div className={clsx(s.package)}>
+      </article>
+      <article className={clsx(s.package)}>
         <Typography className={clsx(s.title)} variant="body1">
           Trending Spa Package
         </Typography>
@@ -54,7 +55,13 @@ export const HomePage = () => {
             <Button>See More Spa Packages</Button>
           </Card>
         </div>
-      </div>
+      </article>
+      <article>
+        <Gallery className={clsx(s.gallery)} title={'Dog Collars'} goods={Collars}/>
+      </article>
+      <article>
+        <Gallery className={clsx(s.gallery)} title={'Animal Carry Ons'} goods={CarryOns}/>
+      </article>
     </>
   );
 };
