@@ -1,0 +1,39 @@
+.article {
+  padding: 0 4.75rem 0 5.25rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.subheading {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+}
+
+.text {
+  width: 32.5rem;
+  text-align: center;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.cardImage {
+  width: 550px;
+  height: 550px;
+  overflow: hidden;
+}

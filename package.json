@@ -11,10 +11,12 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@apollo/client": "^3.10.4",
     "@fontsource-variable/cormorant": "^5.0.14",
     "@fontsource/cinzel-decorative": "^5.0.19",
     "@fontsource/tangerine": "^5.0.12",
     "clsx": "^2.1.1",
+    "graphql": "^16.8.1",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",

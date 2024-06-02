@@ -4,10 +4,10 @@ import s from "./offer.module.scss";
 
 export const Offer = () => {
   return (
-    <div className={clsx(s.offer)}>
+    <section className={clsx(s.offer)}>
       <Typography variant="body2">
         Get 20% OFF When You Book A Spa Day For Your Animal Today!
       </Typography>
-    </div>
+    </section>
   );
 };
