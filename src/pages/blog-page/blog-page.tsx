@@ -4,14 +4,12 @@ import { BlogArticle } from "@/constants/articles";
 const BlogPage = () => {
   const { title, subheading, subtitle, sections } = BlogArticle;
   return (
-    <main>
       <ArticleBoilerplate
         title={title}
         subheading={subheading}
         subtitle={subtitle}
         sections={sections}
       />
-    </main>
   );
 };
 

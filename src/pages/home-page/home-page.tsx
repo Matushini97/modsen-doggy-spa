@@ -5,6 +5,7 @@ import { Typography } from "@/components/ui/typography";
 import { Button, Gallery } from "@/components/ui";
 import { Card } from "@/components/ui/card";
 import { Collars, CarryOns } from "@/constants/goods";
+import Link from "next/link";
 
 const HomePage = () => {
   return (
@@ -19,7 +20,7 @@ const HomePage = () => {
               a spa day!
             </Typography>
           </div>
-          <Button>Book Appointment</Button>
+          <Button as={Link} href="/appointments">Book Appointment</Button>
         </div>
         <Image
           className={s.logo}
@@ -52,7 +53,7 @@ const HomePage = () => {
               and cleansing of any dirt left hiding in their beautiful fur
               (comes with a take home face products and animal treats).
             </Typography>
-            <Button>See More Spa Packages</Button>
+            <Button as={Link} href="/spa-services">See More Spa Packages</Button>
           </Card>
         </div>
       </article>

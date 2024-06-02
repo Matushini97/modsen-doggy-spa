@@ -1,0 +1,25 @@
+.infoWrapper {
+  padding: 3rem 3rem;
+}
+
+.infoWrapper .title {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 5rem;
+}
+
+.selection {
+  color: var(--color-pink-kisses);
+}
+
+.textField {
+  width: 21rem;
+}

@@ -1,10 +1,9 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import InfoPage from "@/pages/info-page/info-page";
 
 export default function Info() {
   return (
-    <main className=''>
-      Info
+    <main className="">
+      <InfoPage />
     </main>
   );
 }

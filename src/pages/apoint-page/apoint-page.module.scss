@@ -1,0 +1,25 @@
+.image {
+  height: 52rem;
+  background: url("/appoint.png") center / cover no-repeat;
+  padding-left: 8rem;
+  padding-top: 8rem;
+  margin-bottom: 4rem;
+}
+
+.title {
+  color: var(--color-text-button-primary);
+  width: 21rem;
+  line-height: 4.5rem;
+  font-size: 3rem;
+}
+
+.mapForm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formTitle {
+    padding-left: 3rem;
+    margin-bottom: 3rem;
+}

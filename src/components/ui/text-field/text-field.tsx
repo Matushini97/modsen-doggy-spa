@@ -2,7 +2,6 @@ import {
   ComponentProps,
   ComponentPropsWithoutRef,
   forwardRef,
-  useState,
 } from "react";
 
 import { clsx } from "clsx";
