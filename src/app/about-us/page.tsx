@@ -1,10 +1,9 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import AboutUsPage from "@/pages/aboutus-page/aboutus-page";
 
 export default function AboutUs() {
   return (
     <main className=''>
-      About Us
+      <AboutUsPage />
     </main>
   );
 }

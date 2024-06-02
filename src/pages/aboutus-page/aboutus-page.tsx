@@ -1,8 +1,8 @@
 import { ArticleBoilerplate } from "@/components/ui/article-boilerplate/article-boilerplate";
-import { BlogArticle } from "@/constants/articles";
+import { AboutUsArticle } from "@/constants/articles";
 
-const BlogPage = () => {
-  const { title, subheading, subtitle, sections } = BlogArticle;
+const AboutUsPage = () => {
+  const { title, subheading, subtitle, sections } = AboutUsArticle;
   return (
     <main>
       <ArticleBoilerplate
@@ -15,4 +15,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default AboutUsPage;

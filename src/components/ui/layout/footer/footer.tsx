@@ -1,13 +1,13 @@
 "use client";
 import clsx from "clsx";
 import { Typography } from "../../typography";
-import s from "./footer.module.scss";
 import { FooterLinksLeft, FooterLinksRight } from "@/constants/links";
 import { Button } from "../../button";
 import { LinkList } from "../../links-list";
 import { TextField } from "../../text-field";
 import { SocialsList } from "../../socials";
 import Link from "next/link";
+import s from "./footer.module.scss";
 
 export const Footer = () => {
   return (

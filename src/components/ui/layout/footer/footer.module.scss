@@ -1,22 +1,20 @@
 .footer {
-    padding: 3.44rem 1.625rem 5.25rem 1.625rem;
-    display: flex;
-    gap: 13.18rem;
-    justify-content: center;
-    height: 25rem;
-    background-color: var(--color-inhouse);
+  padding: 3.44rem 1.625rem 5.25rem 1.625rem;
+  display: flex;
+  justify-content: space-between;
+  height: 25rem;
+  background-color: var(--color-inhouse);
 }
 
 .separator {
-    background-color: var(--color-rosey-cheek);
-    height: 0.75rem;
+  background-color: var(--color-rosey-cheek);
+  height: 0.75rem;
 }
 
-
 .form {
-    display: flex;
-    align-items: center;
-    gap: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
 }
 
 .title {
@@ -24,21 +22,21 @@
 }
 
 .formWrapper {
-    width: 42.625rem;
-    margin-bottom: 2.8rem;
+  width: 42.625rem;
+  margin-bottom: 2.8rem;
 }
 
 .bottomSeparator {
-    display: flex;
-    justify-content: center;
-    gap: 9.37rem;
-    align-items: center;
-    padding: 0 5.9rem;
-    height: 3.25rem;
-    background-color: var(--color-rosey-cheek);
+  display: flex;
+  justify-content: center;
+  gap: 9.37rem;
+  align-items: center;
+  padding: 0 5.9rem;
+  height: 3.25rem;
+  background-color: var(--color-rosey-cheek);
 }
 
 .textWrapper {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
