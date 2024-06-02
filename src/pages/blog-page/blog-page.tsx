@@ -4,7 +4,7 @@ import s from "./blog-page.module.scss";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
 
-export const BlogPage = () => {
+const BlogPage = () => {
   return (
     <article className={clsx(s.article)}>
       <Typography className={clsx(s.title)} variant="body1">
@@ -54,3 +54,5 @@ export const BlogPage = () => {
     </article>
   );
 };
+
+export default BlogPage

@@ -29,7 +29,7 @@ type GetServicesData = {
   services: Service[];
 };
 
-export const Services = () => {
+const Services = () => {
   const { loading, error, data } = useQuery<GetServicesData>(GET_SERVICES, {
     client,
   });
@@ -56,3 +56,4 @@ export const Services = () => {
     </article>
   );
 };
+export default Services;

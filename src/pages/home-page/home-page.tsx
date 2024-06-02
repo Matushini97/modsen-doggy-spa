@@ -6,7 +6,7 @@ import { Button, Gallery } from "@/components/ui";
 import { Card } from "@/components/ui/card";
 import { Collars, CarryOns } from "@/constants/goods";
 
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <>
       <article className={clsx(s.imgWrapper)}>
