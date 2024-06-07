@@ -1,0 +1,30 @@
+.modal {
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+  background-color: white;
+  border: 2px solid rgb(240, 240, 240);
+  border-radius: 12px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  max-width: 80%; /* Ширина модального окна */
+  padding: 20px; /* Отступы внутри модального окна */
+  overflow-y: auto; /* Разрешить вертикальную прокрутку, если контент не помещается на экран */
+  display: flex; /* Использовать flexbox для выравнивания кнопки */
+  flex-direction: column; /* Выравнивание по вертикали */
+  justify-content: center; /* Выравнивание по вертикали */
+  align-items: center; /* Выравнивание по горизонтали */
+}
+
+.modal:focus {
+  outline: none; /* Убираем обводку при фокусе */
+}
+
+.modal button {
+  margin-top: 20px; /* Отступ между кнопкой и остальным контентом модального окна */
+}
+
+.modal .text {
+  text-align: left; /* Выравнивание текста по левому краю */
+}

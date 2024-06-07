@@ -16,10 +16,16 @@
 .mapForm {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .formTitle {
     padding-left: 3rem;
     margin-bottom: 3rem;
+}
+
+.card {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
 }

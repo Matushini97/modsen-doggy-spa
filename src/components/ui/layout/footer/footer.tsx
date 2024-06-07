@@ -9,7 +9,33 @@ import { SocialsList } from "../../socials";
 import Link from "next/link";
 import s from "./footer.module.scss";
 
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useForm } from "react-hook-form";
+
+type FormValues = {
+  email: string;
+};
+
+const schema = yup.object({
+  email: yup
+    .string()
+    .email("Please enter a valid email")
+    .required("Email is required"),
+});
+
 export const Footer = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormValues>({
+    resolver: yupResolver(schema),
+  });
+
+  const onSubmit = handleSubmit((data) => {
+    console.log(data);
+  });
   return (
     <>
       <div className={s.separator}></div>
@@ -22,8 +48,13 @@ export const Footer = () => {
             <Typography className={clsx(s.title)}>
               Subscribe to our Newsletter
             </Typography>
-            <form className={clsx(s.form)} action="">
-              <TextField placeholder="email" type="email" />
+            <form onSubmit={onSubmit} className={clsx(s.form)} action="">
+              <TextField
+                {...register("email")}
+                placeholder="email"
+                type="email"
+                errorMessage={errors.email?.message}
+              />
               <Button>Submit</Button>
             </form>
           </div>

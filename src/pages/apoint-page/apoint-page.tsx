@@ -3,6 +3,7 @@ import s from "./apoint-page.module.scss";
 import { Typography } from "@/components/ui/typography";
 import { AppointForm } from "@/components/ui/appoint-form/appoint-form";
 import { Card } from "@/components/ui/card";
+import MapWidget from "@/components/ui/map-widget/map-widget";
 
 const ApointPage = () => {
   return (
@@ -12,12 +13,12 @@ const ApointPage = () => {
           Book An Appointment With Our Groom Specialist Today!
         </Typography>
       </div>
-      <Typography className={s.formTitle} variant="body1">
-        Enter your information here
-      </Typography>
+
       <div className={clsx(s.mapForm)}>
         <AppointForm />
-        <Card>hi</Card>
+        <Card className={clsx(s.card)}>
+          <MapWidget />
+        </Card>
       </div>
     </main>
   );

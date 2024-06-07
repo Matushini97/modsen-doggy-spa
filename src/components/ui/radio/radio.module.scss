@@ -1,0 +1,53 @@
+.root {
+  display: flex;
+  align-items: center;
+
+  .label {
+    display: flex;
+    align-items: center;
+
+    input {
+      display: none;
+    }
+
+    .check {
+      width: 1.5rem;
+      height: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      border: 0.125rem solid black;
+      background: #e89b93;
+      margin-right: 0.625rem;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        opacity: 0;
+        width: 0.5rem;
+        height: 0.75rem;
+        border: solid white;
+        border-width: 0 0.125rem 0.125rem 0;
+        transform: rotate(45deg);
+        left: 50%;
+        top: 37%;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &:hover::before {
+        opacity: 0.3;
+      }
+    }
+
+    input:checked + .check::before {
+      opacity: 1;
+    }
+  }
+
+  .labelText {
+    margin-left: 0.625rem;
+  }
+}

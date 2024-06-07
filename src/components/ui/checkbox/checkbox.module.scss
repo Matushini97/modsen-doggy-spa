@@ -1,0 +1,55 @@
+.input {
+    // visibility: hidden;
+    display: none;
+}
+
+.root {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.root label {
+  cursor: pointer;
+  // position: absolute;
+  width: 24px;
+  height: 22px;
+  top: 0;
+  border-radius: 4px;
+
+  background: var(--color-pink-kisses);
+}
+
+.root label:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  width: 12px;
+  height: 8px;
+  background: transparent;
+  top: 5px;
+  left: 6px;
+  border: 2px solid var(--color-text-button-primary);
+  border-top: none;
+  border-right: none;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.root label:hover::after {
+  opacity: 0.3;
+}
+
+.root input[type="radio"]:checked + label:after {
+  opacity: 1;
+}
+
+
+.labelText {
+    position: absolute;
+    left: 3rem;
+}

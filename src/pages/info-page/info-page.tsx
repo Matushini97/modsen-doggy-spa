@@ -5,7 +5,51 @@ import { Typography } from "@/components/ui/typography";
 import { TextField } from "@/components/ui";
 import { DogCard } from "@/components/ui/dog-card/dog-card";
 
+import { useQuery, gql } from "@apollo/client";
+
+import { ApolloClient, InMemoryCache } from "@apollo/client";
+
+const client = new ApolloClient({
+  uri: "http://localhost:4000",
+  cache: new InMemoryCache(),
+});
+
+const GET_DOGS = gql`
+  query GetDogs($name: String) {
+    dogs(name: $name) {
+      imageLink
+      goodWithChildren
+      goodWithOtherDogs
+      shedding
+      grooming
+      drooling
+      coatLength
+      goodWithStrangers
+      playfulness
+      protectiveness
+      trainability
+      energy
+      barking
+      minLifeExpectancy
+      maxLifeExpectancy
+      maxHeightMale
+      maxHeightFemale
+      maxWeightMale
+      maxWeightFemale
+      minHeightMale
+      minHeightFemale
+      minWeightMale
+      minWeightFemale
+      name
+    }
+  }
+`;
+
 const InfoPage = () => {
+  const { loading, error, data } = useQuery(GET_DOGS, {
+    client,
+    variables: { name: "golden retriever" },
+  });
   return (
     <div className={clsx(s.infoWrapper)}>
       <Typography className={clsx(s.title)}>INFO DOG</Typography>
@@ -18,7 +62,8 @@ const InfoPage = () => {
           <TextField isSearch={true} placeholder="Search" />
         </div>
       </div>
-      <DogCard />
+      {data?.name}
+      {/* <DogCard /> */}
     </div>
   );
 };

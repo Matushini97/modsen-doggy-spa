@@ -109,8 +109,8 @@
 }
 .error {
   @include typography(
-    var(--font-family-headers),
-    var(--font-size-s),
+    var(--font-family-primary),
+    var(--font-size-l),
     var(--line-height-m),
     var(--font-weight-regular)
   );
