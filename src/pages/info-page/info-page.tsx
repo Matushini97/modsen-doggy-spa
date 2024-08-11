@@ -56,7 +56,7 @@ const InfoPage = () => {
       <div className={clsx(s.search)}>
         <Typography>
           Current Selection:{" "}
-          <span className={clsx(s.selection)}>Beds&Cushion</span>
+          <span className={clsx(s.selection)}>Beds&Cushionfdfdf</span>
         </Typography>
         <div className={clsx(s.textField)}>
           <TextField isSearch={true} placeholder="Search" />
