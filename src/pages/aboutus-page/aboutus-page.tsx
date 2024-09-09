@@ -11,6 +11,7 @@ const AboutUsPage = () => {
         subtitle={subtitle}
         sections={sections}
       />
+      <p>Changes on remote to make conflict</p>
     </main>
   );
 };
